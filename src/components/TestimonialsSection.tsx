@@ -3,31 +3,31 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Marcus",
-    role: "Profisportler",
+    name: "Yvonne",
+    role: "Kundin mit chronischer Müdigkeit",
     quote:
-      "Die Sportmassage- und BMS-Sitzungen in der Klinik waren ausschlaggebend für meine Erholung. Ich fühle mich explosiver und meine Muskelspannungen sind praktisch verschwunden.",
+      "Dank der bioplasmatischen Analyse mit dem Biotensor konnte ich gezielt herausfinden, welche Lebensmittel meinen Körper positiv beeinflussen und welche Nahrungsergänzungsmittel mein Körper tatsächlich braucht. Unverträglichkeiten wurden sichtbar gemacht und ich konnte meine Ernährung entsprechend anpassen. Seitdem fühle ich mich deutlich ausgeglichener, leichter und energiegeladener.",
     rating: 5,
   },
   {
-    name: "Elena",
-    role: "Wellness-Befürworterin",
+    name: "Dominik",
+    role: "Geschäftsführer",
     quote:
-      "Frequenztherapie mit Biophotonlight klang futuristisch, aber die Ergebnisse waren fast unmittelbar zu spüren. Meine Schlafqualität und mein Energieniveau waren noch nie besser.",
+      "Die energetische Begleitung hat mir geholfen, tief verwurzelte Themen zu erkennen und Schritt für Schritt aufzulösen. Besonders beeindruckt hat mich, wie sich innere Unruhe und Erschöpfung spürbar reduziert haben. Ich fühle mich heute ausgeglichener, stabiler und wieder mehr in meiner eigenen Kraft.",
     rating: 5,
   },
   {
-    name: "Thomas",
-    role: "Patient mit chronischen Schmerzen",
+    name: "Maria",
+    role: "Rentnerin",
     quote:
-      "Nach Jahren mit Rückenproblemen hat die Kombination aus Schröpfen und bioplasmatischer Behandlung endlich die Linderung verschafft, die ich brauchte. Wahrlich eine ganzheitliche Heilerfahrung.",
+      "Die Frequenztherapie mit Biophotonenlicht war für mich zunächst ungewohnt. Die Wirkung jedoch schnell spürbar. Besonders beeindruckend war, dass meine Knieschmerzen vollständig verschwunden sind und ich mich wieder schmerzfrei bewegen kann.",
     rating: 5,
   },
   {
-    name: "Sophia",
-    role: "Unternehmensführung",
+    name: "Sandro",
+    role: "Sportler",
     quote:
-      "Die Gesundheitsberatung hat mir geholfen, meinen Lebensstil für nachhaltige Vitalität neu zu strukturieren. Der personalisierte Ansatz ist mit nichts zu vergleichen, was ich bisher ausprobiert habe.",
+      "Die Kombination aus Sportmassage und Biomechanische Stimulation hat meine Regeneration deutlich verbessert. Meine Muskelspannungen haben sich gelöst und ich fühle mich spürbar leistungsfähiger und dynamischer.",
     rating: 5,
   },
 ];
@@ -59,17 +59,17 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.25, 0.4, 0.25, 1] }}
-          className="mx-auto max-w-2xl text-center mb-16"
+          className="mx-auto max-w-3xl text-center mb-16"
         >
           <span className="inline-block mb-3 text-sm font-semibold tracking-wider text-muted-foreground uppercase">
             Referenzen
           </span>
           <h2 className="text-3xl font-bold tracking-tight md:text-5xl text-foreground">
-            Geschätzt von Führungspersönlichkeiten <br />
-            <span className="text-primary italic">& Zukunftssuchenden.</span>
+            Echte Erfahrungen. <br />
+            <span className="text-primary italic">Spürbare Veränderung.</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-            Echte Transformationsgeschichten von Klienten, die die Kraft fortschrittlicher Vitalitätspflege erleben.
+            Einblicke in persönliche Wege zu mehr Wohlbefinden, innerer Balance und neuer Lebensqualität.
           </p>
         </motion.div>
 

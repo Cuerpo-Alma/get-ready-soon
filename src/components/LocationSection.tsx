@@ -21,7 +21,7 @@ const fallbackDetails = {
 };
 
 const fallbackHours = [
-  { day: "Montag – Freitag", time: "08:30 – 19:30" },
+  { day: "Montag – Freitag", time: "08:00 – 19:00" },
   { day: "Samstag", time: "09:00 – 14:00" },
   { day: "Sonntag", time: "Geschlossen" },
 ];
@@ -35,9 +35,9 @@ const LocationSection = () => {
     },
   });
 
-  const badgeText = locationData?.badgeText || "So finden Sie uns";
-  const sectionTitle = locationData?.title || "Besuchen Sie meine Praxis";
-  const sectionDescription = locationData?.description || "Erleben Sie professionelle Pflege in einer modernen, ruhigen Umgebung, die für Ihren Komfort und Ihre Erholung konzipiert wurde.";
+  const badgeText = locationData?.badgeText || "So findest du mich";
+  const sectionTitle = locationData?.title || "Willkommen in meiner Praxis";
+  const sectionDescription = locationData?.description || "In meiner Praxis erwartet dich ein Ort, an dem Körper und Seele in Einklang gebracht werden. Ruhig, achtsam und ganz auf deine individuellen Bedürfnisse abgestimmt.";
 
   const address = locationData?.address || fallbackDetails.address;
   const phone = locationData?.phone || fallbackDetails.phone;
@@ -103,6 +103,9 @@ const LocationSection = () => {
               </div>
               <div className="w-full pt-1">
                 <p className="text-xs font-black uppercase tracking-widest text-primary/60 mb-4">Öffnungszeiten</p>
+                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+                  Meine Öffnungszeiten dienen als Orientierung und bieten dir eine flexible Planung. Individuelle Termine sind je nach Verfügbarkeit auch ausserhalb dieser Zeiten möglich.
+                </p>
                 <ul className="space-y-4">
                   {hours.map((h) => (
                     <li key={h.day} className="flex justify-between items-center gap-6 group/item">
@@ -140,9 +143,9 @@ const LocationSection = () => {
           transition={{ delay: 0.6, duration: 1 }}
           className="mt-20 text-center"
         >
-          <p className="text-sm font-bold tracking-[0.3em] text-primary/40 uppercase mb-2">Zitat des Monats</p>
+          <p className="text-sm font-bold tracking-[0.3em] text-primary/40 uppercase mb-2">Quote of the month</p>
           <p className="text-lg text-muted-foreground italic font-light">
-            "Ihr Körper ist ein Tempel, aber nur, wenn Sie ihn als solchen behandeln. Vitalität ist der Lohn für achtsames Leben."
+            „Die beste Investition ist die in dich selbst und deine Gesundheit.“
           </p>
         </motion.div>
       </div>
@@ -151,4 +154,5 @@ const LocationSection = () => {
 };
 
 export default LocationSection;
+
 

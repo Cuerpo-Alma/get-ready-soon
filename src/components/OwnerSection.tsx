@@ -14,26 +14,28 @@ const OwnerSection = () => {
                         viewport={{ once: true }}
                         className="lg:w-1/2"
                     >
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-6">
-                            <User className="w-3 h-3" />
-                            Lernen Sie mich kennen
-                        </div>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8">
-                            Das Herz hinter <br />
-                            <span className="text-primary italic">Cuerpo & Alma.</span>
+                            Ganzheitliche Begleitung - <br />
+                            <span className="text-primary italic">Das Herz hinter Cuerpo & Alma.</span>
                         </h2>
                         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                             <p>
-                                Als ehemaliger Fussballspieler war mir Gesundheit immer sehr wichtig – nicht nur körperlich, sondern auch mental. Meine Reise begann mit dem Wunsch, Menschen zu helfen und zu sehen, wie sie nach einer Behandlung mit einem Lächeln auf den Lippen meine Praxis verlassen.
+                                Meine Arbeit ist mehr als ein Beruf. Sie ist Ausdruck meiner Überzeugung, dass echte Gesundheit aus Balance, Achtsamkeit und innerer Verbindung entsteht.
                             </p>
                             <p>
-                                Ich habe früh gemerkt, dass ich mit meinen Händen viel Gutes bewegen kann. Seit 2014 arbeite ich als klassischer Masseur. Durch stetige Weiterbildungen, unter anderem in der Energetikarbeit, Schröpfen sowie der Gesundheits- und Sportberatung, habe ich mein Wissen kontinuierlich vertieft. Das Helfen ist mehr als ein Beruf für mich – es ist meine Lebensaufgabe.
+                                Als ehemaliger Fussballspieler habe ich früh gelernt, wie entscheidend es ist, Körper und Seele in Einklang zu halten. Aus dieser Erfahrung heraus entwickelte sich mein Weg: Menschen auf einer tieferen Ebene zu begleiten und ihnen Raum für Regeneration, Selbstheilung und neue Kraft zu schenken.
+                            </p>
+                            <p>
+                                Seit 2014 widme ich mich der ganzheitlichen Arbeit mit Menschen und habe mein Wissen durch kontinuierliche Weiterbildungen, unter anderem in der Energetikarbeit, im Schröpfen sowie in der Gesundheits- und Sportberatung stetig erweitert. Dabei ist eine Arbeitsweise entstanden, die Präzision, Intuition und ein tiefes Verständnis für individuelle Prozesse miteinander verbindet.
+                            </p>
+                            <p>
+                                In meiner Begleitung geht es nicht nur darum, Symptome zu lindern, sondern darum, die zugrunde liegende Balance wiederzufinden. Gemeinsam schaffen wir die Basis für nachhaltige Vitalität und ein neues Körpergefühl.
                             </p>
                         </div>
 
                         <div className="mt-10 p-6 bg-white rounded-2xl border border-border/50 shadow-sm relative italic text-foreground/80">
                             <Quote className="absolute -top-4 -left-4 w-10 h-10 text-primary/20" />
-                            Jeder Mensch ist einzigartig und deshalb braucht er auch eine individuelle Behandlung.
+                            „Die beste Investition ist die in dich selbst und deine Gesundheit.“
                         </div>
                     </motion.div>
 

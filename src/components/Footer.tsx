@@ -1,7 +1,7 @@
-
-import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import logoReal from "@/assets/logo_real.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,11 +18,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 w-full justify-between">
           <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3 text-2xl font-bold tracking-tight text-foreground">
-              <div className="bg-primary/10 p-2 rounded-xl">
-                {/* Leaf icon removed as per instruction, but keeping the div for styling consistency if needed */}
-                {/* <Leaf className="h-6 w-6 text-primary" /> */}
-              </div>
-              Cuerpo & Alma.
+              <img src={logoReal} alt="Cuerpo & Alma Logo" className="h-20 w-auto" />
             </div>
             <p className="text-muted-foreground max-w-sm">
               Körper und Seele im Einklang.

@@ -1,13 +1,14 @@
-import { Zap, Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ContactDialog from "@/components/ContactDialog";
+import logoReal from "@/assets/logo_real.png";
 
 const navLinks = [
   { label: "Startseite", href: "#book" },
   { label: "Dienstleistungen", href: "#services" },
-  { label: "Über uns", href: "#about" },
+  { label: "Über mich", href: "#about" },
   { label: "Der Inhaber", href: "#owner" },
   { label: "Referenzen", href: "#testimonials" },
   { label: "Standort", href: "#location" },
@@ -36,14 +37,14 @@ const Header = () => {
       <div className="container flex items-center justify-between">
         <a href="#" className="flex flex-col group transition-transform hover:scale-[1.02]">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white shadow-lg group-hover:rotate-12 transition-transform duration-500">
-              <Zap className="h-5 w-5 fill-current" />
+            <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform duration-500">
+              <img src={logoReal} alt="Cuerpo & Alma Logo" className="w-full h-full object-cover scale-110" />
             </div>
             <span className="text-xl font-bold tracking-tighter text-foreground uppercase">
               Jose Barassa
             </span>
           </div>
-          <span className="text-[10px] font-bold tracking-[0.2em] text-primary uppercase ml-10 -mt-1 opacity-80 group-hover:opacity-100 transition-opacity">
+          <span className="text-[10px] font-bold tracking-[0.2em] text-primary uppercase ml-14 -mt-1 opacity-80 group-hover:opacity-100 transition-opacity">
             Cuerpo-alma
           </span>
         </a>
@@ -111,7 +112,7 @@ const Header = () => {
                 }}
                 className="w-full rounded-2xl h-14 text-xs font-bold uppercase tracking-widest shadow-xl mt-4"
               >
-                Kontaktieren Sie uns
+                Termin buchen
               </Button>
             </div>
           </motion.nav>
@@ -123,4 +124,3 @@ const Header = () => {
 };
 
 export default Header;
-

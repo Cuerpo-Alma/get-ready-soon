@@ -5,23 +5,23 @@ import joseProfile from "@/assets/jose_profile.png";
 const aboutFeatures = [
   {
     icon: Heart,
-    title: "Patientenzentrierte Pflege",
-    description: "Ihre Gesundheit und Ihr Wohlbefinden stehen im Mittelpunkt meines Handelns. Ich erstelle personalisierte Behandlungspläne, die auf Ihre individuellen Bedürfnisse zugeschnitten sind."
+    title: "Ganzheitliche Begleitung",
+    description: "Deine Gesundheit und dein Wohlbefinden stehen im Mittelpunkt meiner Arbeit. Gemeinsam schaffen wir die Basis für nachhaltige Vitalität."
   },
   {
     icon: Award,
-    title: "Expertise & Innovation",
-    description: "Kombination jahrelanger klinischer Erfahrung mit innovativen Technologien wie BMS und Frequenztherapie für erstklassige Ergebnisse."
+    title: "Expertise & Intuition",
+    description: "Seit 2014 begleite ich Menschen mit fachlicher Präzision und tiefem Verständnis für individuelle Prozesse."
   },
   {
     icon: Users,
-    title: "Ganzheitlicher Ansatz",
-    description: "Ich glaube daran, den Menschen zu behandeln, nicht nur die Symptome, und integriere körperliches, systemisches und energetisches Wohlbefinden."
+    title: "Individueller Ansatz",
+    description: "Kein Weg ist wie der andere. Deshalb wird jede Behandlung persönlich auf dich und deine Bedürfnisse abgestimmt."
   },
   {
     icon: Target,
-    title: "Ergebnisorientiert",
-    description: "Mein Fokus liegt auf messbaren Verbesserungen, damit Sie mit Zuversicht zu Ihrer Höchstleistung und Ihrem täglichen Leben zurückkehren können."
+    title: "Nachhaltige Vitalität",
+    description: "Mein Fokus liegt darauf, die zugrunde liegende Balance wiederzufinden und langfristige Gesundheit zu fördern."
   }
 ];
 
@@ -43,15 +43,15 @@ const AboutSection = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8">
-              Jeder Mensch ist <br />
-              <span className="text-primary italic">einzigartig.</span>
+              Ankommen. Loslassen. <br />
+              <span className="text-primary italic">In Selbstheilung kommen.</span>
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Als ehemaliger Fussballspieler weiss ich aus erster Hand, wie wichtig Gesundheit ist – nicht nur körperlich, sondern auch mental. Ich bin <span className="text-foreground font-semibold">Jose Barassa</span>, klassischer Masseur und Therapeut seit 2014.
+                Ich unterstütze dich dabei, Stress abzubauen, besser zu schlafen und wieder mehr Energie und Lebensfreude zu spüren – auch bei körperlichen Beschwerden, Sportverletzungen oder chronischen Schmerzen.
               </p>
               <p>
-                Es bereitet mir grosse Freude, Menschen zu helfen und zu sehen, dass es ihnen nach einer Behandlung besser geht und sie mit einem Lächeln auf den Lippen meine Praxis <span className="text-foreground font-semibold">Cuerpo & Alma</span> verlassen. Mit meinen Händen viel Gutes zu bewegen, ist für mich mehr als ein Beruf – es ist meine Lebensaufgabe.
+                Individuell abgestimmt, ganzheitlich und auf deine Bedürfnisse ausgerichtet, schaffen wir gemeinsam den Raum für deine Regeneration, Selbstheilung und neue Kraft.
               </p>
             </div>
           </motion.div>

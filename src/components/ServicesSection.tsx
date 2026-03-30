@@ -3,10 +3,11 @@ import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Activity, Hand, Bone, Brain, Zap, ChevronDown, LucideIcon, Sparkles } from "lucide-react";
 
 import serviceMassage from "@/assets/service_massage.png";
-import serviceBms from "@/assets/service_bms.png";
+import serviceBms from "@/assets/real_photos/bms_device.png";
 import serviceFrequency from "@/assets/service_frequency.png";
-import serviceBioplasmatic from "@/assets/service_bioplasmatic.png";
+import serviceBioplasmatic from "@/assets/real_photos/biotensor.png";
 import serviceConsultation from "@/assets/service_consultation.png";
+import serviceBiophotonen from "@/assets/real_photos/biophoton_device.png";
 
 const iconMap: Record<string, LucideIcon> = {
   Activity,
@@ -41,65 +42,73 @@ const services: Service[] = [
     iconColor: "text-slate-800",
     border: "border-slate-200 hover:border-slate-300",
     description: "Personalisierte Massagetherapie, die auf Ihre muskulären Bedürfnisse und Entspannungsziele zugeschnitten ist.",
-    detail:
-      "Wählen Sie aus meinen fachmännisch angewandten Massagemethoden. Die klassische Massage nutzt fließende Bewegungen, um Verspannungen zu lösen und tiefe Entspannung zu fördern. Schröpfen wendet Unterdruck auf das Weichteilgewebe an, löst Verklebungen und stimuliert die Durchblutung in tieferen Schichten. Jede Sitzung wird an Ihren individuellen Körper angepasst.",
+    detail: "Wählen Sie aus meinen fachmännisch angewandten Massagemethoden: Klassische Massage, Sportmassage oder Schröpfen. Jede Sitzung wird an Ihren individuellen Körper angepasst, um Verspannungen zu lösen und die Regeneration zu fördern.",
     highlights: ["Klassische Massage", "Sportmassage", "Schröpfen"],
   },
   {
     iconName: "Activity",
     image: serviceBms,
     title: "Biomechanische Stimulation (BMS)",
-    price: "155",
+    price: "Ab 24",
     accent: "from-white to-slate-50/60",
     iconBg: "bg-slate-100",
     iconColor: "text-slate-800",
     border: "border-slate-200 hover:border-slate-300",
-    description: "Fortschrittliche mechanische Vibrationstherapie zur Verbesserung der Muskelfunktion und Erholung.",
-    detail:
-      "BMS nutzt präzise kalibrierte mechanische Vibrationen, die direkt auf das Muskel- und Bindegewebe einwirken. Die Oszillationen lösen unwillkürliche Muskelkontraktionen aus, beschleunigen den Lymphfluss, verbessern die Propriozeption und steigern die Mikrozirkulation. Klienten erleben typischerweise weniger Muskelkater, eine schnellere Erholung nach Verletzungen und messbare Kraftzuwächse. Mein einzigartiges BMS-Protokoll kombiniert Frequenzsequenzierung mit gezielter Haltungskorrektur für nachhaltige Ergebnisse.",
-    highlights: ["Gezielte Vibrationstherapie", "Unterstützung des Lymphabflusses", "Beschleunigte Muskelerholung"],
+    description: "Die biomechanische Stimulation nach Prof. Dr. habil. Vladimir T. Nazarov ist eine hochwirksame Methode zur Regeneration.",
+    detail: "BMS nutzt präzise kalibrierte mechanische Vibrationen, die direkt auf das Muskel- und Bindegewebe einwirken. Preise: 45 Minuten CHF 72, 30 Minuten CHF 48, 15 Minuten CHF 24.",
+    highlights: ["Regeneration durch Schwingung", "Beschleunigte Muskelerholung", "Tiefenwirkung"],
   },
   {
     iconName: "Zap",
     image: serviceFrequency,
-    title: "Energetik",
+    title: "Energetikarbeit",
     price: "145",
     accent: "from-white to-slate-50/60",
     iconBg: "bg-slate-100",
     iconColor: "text-slate-800",
     border: "border-slate-200 hover:border-slate-300",
     description: "Tiefgreifende energetische Blockaden lösen und den Energiefluss im Körper harmonisieren.",
-    detail:
-      "Mit verschiedenen Techniken der Energetikarbeit unterstütze ich Sie dabei, Blockaden auf feinstofflicher Ebene aufzulösen. Emotionale und energetische Ungleichgewichte, die sich oft als körperliche Beschwerden oder Erschöpfung manifestieren, werden gezielt harmonisiert, um die Selbstheilungskräfte zu aktivieren und ein tiefes Gefühl der Ausgeglichenheit zu schaffen.",
+    detail: "Mit verschiedenen Techniken der Energetikarbeit unterstütze ich Sie dabei, Blockaden auf feinstofflicher Ebene aufzulösen, um die Selbstheilungskräfte zu aktivieren und ein tiefes Gefühl der Ausgeglichenheit zu schaffen.",
     highlights: ["Auflösen von Blockaden", "Harmonisierung des Energieflusses", "Aktivierung der Selbstheilungskräfte"],
   },
   {
     iconName: "Brain",
     image: serviceBioplasmatic,
-    title: "Bioplasmatik",
-    price: "170",
+    title: "Bioplasmatik & Biotensor Analyse",
+    price: "Ab 96",
     accent: "from-white to-slate-50/60",
     iconBg: "bg-slate-100",
     iconColor: "text-slate-800",
     border: "border-slate-200 hover:border-slate-300",
-    description: "Ein spezialisierter Ansatz zum Ausgleich des Energiefeldes und zum systemischen Wohlbefindens.",
-    detail:
-      "Die bioplasmatische Therapie arbeitet mit dem bioelektrischen und energetischen Feld des Körpers – der subtilen Informationsebene, die physiologische Prozesse steuert. Durch präzise, nicht-invasive Techniken lese und harmonisiere ich Störungen in diesem Feld, die mit chronischen Schmerzen, Müdigkeit, Immunstörungen und emotionalem Stress korrelieren. Die Sitzungen führen oft zu tiefgreifenden Veränderungen des Wohlbefindens, der Klarheit und der körperlichen Funktion, die herkömmliche Behandlungen allein nicht erreichen können.",
-    highlights: ["Bioelektrischer Energiefeldausgleich", "Systemischer Wellness-Reset", "Linderung von chronischer Müdigkeit & Schmerzen"],
+    description: "Die bioplasmatische Analyse mit dem Biotensor ermöglicht das präzise Auffinden energetischer Störfelder.",
+    detail: "Harmonisieren energetischer Störfelder in Körper, Umfeld und Lebensraum, um Balance, Verträglichkeit und Wohlbefinden ganzheitlich zu fördern. 60 Minuten ab CHF 96.",
+    highlights: ["Bioelektrischer Energiefeldausgleich", "Präzises Auffinden von Störfeldern", "Ganzheitliche Harmonisierung"],
   },
   {
     iconName: "Bone",
     image: serviceConsultation,
     title: "Gesundheitsberatung",
-    price: "110",
+    price: "Ab 96",
     accent: "from-white to-slate-50/60",
     iconBg: "bg-slate-100",
     iconColor: "text-slate-800",
     border: "border-slate-200 hover:border-slate-300",
-    description: "Professionelle Beratung zu Lebensstil, Ernährung und nachhaltigen Gesundheitspraktiken.",
-    detail:
-      "Eine gründliche 1-zu-1-Beratung, die Ihre aktuelle Gesundheitslandschaft abbildet – von Ernährungslücken und Schlafqualität bis hin zu Bewegungsmustern und Stressbelastung. Ich werte diese Daten aus, um einen personalisierten Fahrplan zu erstellen, der Ernährungsstrategie, Supplementierung, Erholungsprotokolle und Lebensstilanpassungen abdeckt. Follow-up-Sitzungen verfolgen den Fortschritt und passen den Plan an die Reaktion Ihres Körpers an, um eine nachhaltige, langfristige Transformation zu gewährleisten.",
-    highlights: ["Personalisierter Gesundheitsfahrplan", "Ernährungs- & Nahrungsergänzungsstrategie", "Lebensstil- & Erholungsprotokolle"],
+    description: "Individuelle, ganzheitliche Beratung zur Förderung Ihrer Balance, Energie und Lebensqualität.",
+    detail: "Mit gezielten Impulsen bei Stress, Erschöpfung, Schlafproblemen, körperlichen Beschwerden und Gewichtsproblemen. 60 Minuten ab CHF 96.",
+    highlights: ["Personalisierter Gesundheitsfahrplan", "Nachhaltige Vitalität", "Ganzheitlicher Ansatz"],
+  },
+  {
+    iconName: "Activity",
+    image: serviceBiophotonen,
+    title: "Biophotonen-Licht",
+    price: "Ab 24",
+    accent: "from-white to-slate-50/60",
+    iconBg: "bg-slate-100",
+    iconColor: "text-slate-800",
+    border: "border-slate-200 hover:border-slate-300",
+    description: "Innovative Technologie trifft auf natürliche Frequenzen. Sanfte Impulse aus solarem Rauschen und Licht.",
+    detail: "Das ProLight LemBaLight vereint modernste Technologie mit der Kraft natürlicher Frequenzen zur Unterstützung der Balance und Regeneration des Körpers. Preise: 30 Minuten CHF 48, 15 Minuten CHF 24.",
+    highlights: ["Zellregeneration", "Natürliche Frequenzen", "Sanfte Lichtimpulse"],
   },
 ];
 
@@ -193,11 +202,11 @@ const ServicesSection = () => {
                     {/* Price */}
                     <div className="flex flex-col items-end">
                       <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-foreground/40 mb-0.5">
-                        Sitzung ab
+                        Sitzung {s.price.includes('Ab') ? 'ab' : ''}
                       </span>
                       <div className="text-2xl font-black text-foreground leading-none">
                         <span className={`text-sm font-bold ${s.iconColor} mr-1`}>CHF</span>
-                        {s.price}
+                        {s.price.replace('Ab ', '')}
                       </div>
                     </div>
                   </div>
@@ -274,23 +283,13 @@ const ServicesSection = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <p className="text-base text-muted-foreground mb-4">
-            Unsicher, welche Behandlung die richtige für Sie ist?
-          </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-primary text-primary-foreground text-sm font-semibold shadow-lg hover:shadow-xl hover:scale-[1.03] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary mb-12"
-          >
-            Kostenlosen Beratungstermin buchen
-          </a>
-
           {/* Payment Info */}
           <div className="mx-auto max-w-2xl bg-white/60 backdrop-blur-sm border border-black/5 rounded-2xl p-6 md:p-8 shadow-sm text-center">
             <p className="text-sm md:text-[15px] text-foreground/80 leading-relaxed mb-4">
-              Um mich voll und ganz auf Ihre persönliche und qualitativ hochwertige Behandlung konzentrieren zu können, arbeite ich unabhängig und bin <span className="font-semibold text-foreground">nicht krankenkassenanerkannt</span>.
+              Im Mittelpunkt meiner Arbeit steht Ihre individuelle Betreuung unabhängig von Krankenkassen und frei von äußeren Vorgaben. Die Investition in Ihre Gesundheit zahlt sich aus: Sie stärkt Ihr Wohlbefinden, unterstützt die Prävention und fördert langfristige Vitalität.
             </p>
             <p className="text-sm md:text-[15px] text-foreground/80 leading-relaxed">
-              Ihre Investition in Ihre Gesundheit können Sie im Anschluss ganz bequem abstimmen – ich akzeptiere Zahlungen via <span className="font-semibold text-primary">Twint, Bar oder auf Rechnung</span>.
+              Die Bezahlung erfolgt bequem im Anschluss an die Behandlung <span className="font-semibold text-foreground">bar oder via TWINT</span>.
             </p>
           </div>
         </motion.div>
@@ -300,3 +299,4 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
+
